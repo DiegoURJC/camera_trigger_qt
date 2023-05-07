@@ -5,7 +5,7 @@ Creating custom GUI with Qt and ROS2
 
 - ROS2 Foxy installed.
 
-- [ROS2 wrapper for Intel Depth Cameras Series 400](https://github.com/IntelRealSense/realsense-ros) installed and working.
+- [ROS2 wrapper for Intel Depth Cameras Series 400](https://github.com/IntelRealSense/realsense-ros) compiled and working.
 
 - Clone this repository in our workspace (ws/src)
 
