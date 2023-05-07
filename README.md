@@ -1,28 +1,19 @@
-# ROS2QtGui
+# Camera trigger Qt
 Creating custom GUI with Qt and ROS2
 
-## How to Launch the GUI
-1. [Install ROS2 Foxy](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/). Make sure to setup your environment with:
+## Pre-Requisites
 
-        source /opt/ros/foxy/setup.bash
+- ROS2 Foxy installed.
 
-    > *NOTE:* You may want to add that line to your `~/.bashrc`
+- [ROS2 wrapper for Intel Depth Cameras Series 400](https://github.com/IntelRealSense/realsense-ros) installed and working.
 
-2. Create a colcon workspace (*Note:* Feel free to change `~/ws_ros2` to whatever absolute path you want):
+- Clone this repository in our workspace (ws/src)
 
-        export COLCON_WS=~/ws_ros2/
-        mkdir -p $COLCON_WS/src
 
-3. Clone the required repositories and install any dependencies:
+## How to launch the program
 
-        cd $COLCON_WS/src
-        git clone https://github.com/Abishalini/ROS2QtGui.git
-        rosdep install --ignore-src --from-paths . -y
+1. Connect the series D400 camera.
 
-4. Configure and build the workspace
+2. Launch rs_launch.py from ROS2 Wrapper: ros2 launch realsense2_camera rs_launch.py
 
-        source $COLCON_WS/install/setup.bash
-
-5. Launch the GUI using the following command:
-
-        ros2 launch qtros2 gui.launch.py
+3. Launch gui.launch.py from this repository: ros2 launch camera_trigger_qt gui.launch.py 
