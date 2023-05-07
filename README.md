@@ -14,6 +14,10 @@ Creating custom GUI with Qt and ROS2
 
 1. Connect the series D400 camera.
 
-2. Launch rs_launch.py from ROS2 Wrapper: ros2 launch realsense2_camera rs_launch.py
+2. Launch rs_launch.py from ROS2 Wrapper: 
 
-3. Launch gui.launch.py from this repository: ros2 launch camera_trigger_qt gui.launch.py 
+  ros2 launch realsense2_camera rs_launch.py
+
+3. Launch gui.launch.py from this repository: 
+
+  ros2 launch camera_trigger_qt gui.launch.py 
