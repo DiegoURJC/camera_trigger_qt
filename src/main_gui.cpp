@@ -18,7 +18,7 @@ MainGUI::MainGUI(const std::shared_ptr<Ros2Node>& ros2_node, QWidget* parent)
 
   rgbLabel = new QLabel;
   irLabel = new QLabel;
-  m_cameraTriggerButton = new QPushButton("Capture RGB & IR Images");
+  m_cameraTriggerButton = new QPushButton("Capture RGB and IR Images");
 
   // (void)connect(publish_button, &QPushButton::clicked, this, &MainGUI::publish_button_clicked);
   (void)connect(m_cameraTriggerButton, &QPushButton::clicked, this, [this]() {m_ros2Node->captureImages();});
