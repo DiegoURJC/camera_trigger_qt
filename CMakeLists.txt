@@ -19,6 +19,7 @@ find_package(rclcpp_components REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(px4_msgs REQUIRED)
 
 
 include_directories(
@@ -33,6 +34,7 @@ set(dependencies
     rclcpp
     sensor_msgs
     cv_bridge
+    px4_msgs
 )
 
 set(CMAKE_AUTOMOC ON)
@@ -84,7 +86,6 @@ install(
 install(
   DIRECTORY
     launch
-    resources
   DESTINATION share/${PROJECT_NAME}
 )
 

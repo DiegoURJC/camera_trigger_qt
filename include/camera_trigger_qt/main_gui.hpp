@@ -18,6 +18,7 @@ public:
 private:
     void showRgbImage();
     void showIrImage();
+    void showOdometry();
 
     const std::shared_ptr<Ros2Node> m_ros2Node;
 
@@ -25,4 +26,10 @@ private:
     QPushButton* m_cameraTriggerButton;
     QLabel *rgbLabel;
     QLabel *irLabel;
+    QLabel *xLabel;
+    QLabel *yLabel;
+    QLabel *zLabel;
+    QLabel *rollLabel;
+    QLabel *pitchLabel;
+    QLabel *yawLabel;
 };
